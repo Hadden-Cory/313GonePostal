@@ -24,10 +24,10 @@
             <div class="col-sm-2 col-lg-2">
             </div>
             <div class="col-sm-8 col-lg-8">
-                <from name='package' action="/form" method='get'>
+                <form name='package' action="/form" method='get'>
                     <label for='weight'>Weight</label><br>
                     <input type='number' class='w-50' name='weight' step='0.05' size="10" min='0' max='1000'
-                        placeholder='Enter your package wieght in lbs...'><br><br>
+                        placeholder='Enter your package weight in ounces...'><br><br>
                     <label for='mailMethod'>Select a Mailing Method</label><br>
                     <select class='w-50' name='mailMethod' placeholder='Select a Mailing Method'>
                         <option value="stamped">Letters (Stamped)</option>
@@ -36,7 +36,7 @@
                         <option value="firstClass">First-Class Package Service—Retail</option>
                     </select><br><br>
                     <input type="submit" value='Calculate Rate'>
-                </from>
+                </form>
             </div>
             <div class="col-sm-2 col-lg-2">
             </div>
