@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(178, 218, 181) !important;
+}
+
+.construction_site{
+    padding: 20px;
+}
+
+h1{
+    color: rgb(56, 104, 54);
+}
+
+.container{
+    background-color:  rgb(178, 218, 181);
+    padding: 15px;
+}
+
+section{
+    padding: 2%;
+}
+
+body, section, .container, .col-sm-6, .cardFlip, .front, .back, .flipping{
+    height: 100%;
+}
+
+.nav-item:hover{
+    background-color: rgb(67, 168, 185);
+    border-radius: 10px;
+}
+
+.card{
+    color: rgb(63, 118, 138);
+    background-color: rgb(205, 245, 253);
+    border-radius: 10px;
+    height: 290px;
+    -webkit-box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
+    -moz-box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);
+    box-shadow: 10px 10px 48px -15px rgba(0,0,0,0.78);  
+}
+
+.plantImg{
+    width: 344px;
+    height: 245px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+}
+
+.cardFlip {
+    -webkit-perspective: 1600px;
+    perspective: 1600px;
+    }
+
+.cardFlip:hover .flipping, .cardFlip.hover .flipping{
+    -webkit-transfrom: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flipping, .front, .back{
+    width: 345px;
+    height: 400px; 
+}
+
+.flipping{
+    transition:  750ms;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+}
+.front
+{
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.back{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+
+}
+
+
+
+
+
+
